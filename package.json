@@ -1,0 +1,22 @@
+{
+  "name": "maxtank-eapp",
+  "version": "1.0.0",
+  "description": "A simple arcade style tank shooter game built with p5.js and Electron",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Oszti",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.8.2"
+  }
+}
