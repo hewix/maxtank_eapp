@@ -1,7 +1,7 @@
 function Bullet(x, y, isMob) {
     this.xpos = x;
     this.ypos = y;
-    this.r = 3.5;
+    this.r = 3;
     this.speedRate = 1;
     this.vector = {        
         axis: 1,
@@ -50,12 +50,12 @@ function Bullet(x, y, isMob) {
 
     this.hitTarget = function (target) {        
         let d = dist(this.xpos, this.ypos, target.xpos, target.ypos);
-        if ( d < this.r + target.r + 5) {
+        /*if ( d < this.r + target.r + 5) {
             return true;
         } else {
             return false;
-        }
+        }*/
         // or with ternary?
-        // return (d < this.r + target.r + 5) ? true : false;
+        return (d < this.r + target.r + 5) ? true : false;
     }
 }

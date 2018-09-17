@@ -9,15 +9,15 @@ app.once('ready', () => {
   // Create a new window
   window = new BrowserWindow({
     // Set the initial width to 800px
-    width: 800,
+    width: 830,
     // Set the initial height to 600px
-    height: 600,
+    height: 830,
     // Set the default background color of the window to match the CSS
     // background color of the page, this prevents any white flickering
     backgroundColor: "#D6D8DC",
     // Don't show the window until it's ready, this prevents any white flickering
     show: false,
-    resizable: false    
+    resizable: false
   })
 
   // Load a URL in the window to the local index.html path
@@ -29,6 +29,7 @@ app.once('ready', () => {
 
   // Show window when page is ready
   window.once('ready-to-show', () => {
-    window.show()    
+    window.show()   
+    window.setMenu(null) 
   })
 })
